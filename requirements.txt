@@ -1,0 +1,8 @@
+fastapi
+Pillow
+pytesseract
+xmltodict
+docx2txt
+PyPDF2
+uvicorn
+python-multipart
