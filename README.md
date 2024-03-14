@@ -24,19 +24,19 @@ To run the API, execute the following command:
 
 ```bash
 uvicorn text_extractor_api:app --host localhost --port 8000 --workers 3
-
+```
 
 ## Docker Deployment
 
 You can also run the API inside a Docker container. Here's how you can build and run the Docker container:
 
-### Building the Docker Image
+## Building the Docker Image
 
 First, you need to build the Docker image. You can do this with the `docker build` command. In the directory containing the `Dockerfile`, run the following command:
 
 ```bash
 docker build -t text_extractor_api .
-
+```
 ```bash
 docker run -p 8000:8000 text_extractor_api
-
+```
