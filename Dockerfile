@@ -2,7 +2,8 @@
 FROM python:3.10-slim-buster
 
 RUN apt-get update && \
-    apt-get install -y tesseract-ocr tesseract-ocr-por && \
+    apt-get install -y tesseract-ocr tesseract-ocr-rus && \
+    apt-get install -y antiword djvulibre-bin && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 # Set the working directory in the container to /app
